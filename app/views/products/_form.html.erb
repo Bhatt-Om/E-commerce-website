@@ -1,0 +1,31 @@
+<%= form_with model: @product do |f| %>
+
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image  %>
+  </div><br>
+
+  <div>
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name %>
+  </div><br>
+
+  <div>
+    <%= f.label :descriptinon, "Descriptinon" %>
+    <%= f.text_area :descriptinon %>
+  </div><br>
+
+  <div>
+    <%= f.label :category, "Category" %>
+    <%= f.text_field :category %>
+  </div><br>
+
+  <div>
+    <%= f.label :price, "Price" %>
+    <%= f.text_field :price %>
+  </div><br>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
